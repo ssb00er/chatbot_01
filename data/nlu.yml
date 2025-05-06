@@ -1,0 +1,151 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: ask_menu
+  examples: |
+    - "Can I see the menu, please?" 
+    - "What's on the menu today?"
+    - "Show me the menu."
+    - "I'd like to check the menu."
+    - "What do you have to eat?"
+    - "What are the available dishes?"
+    - "Could you list the menu items?"
+    - "May I have a look at the menu?"
+    - "What can I order?"
+    - "What dishes do you offer?"
+    - "Let me see the menu."
+    - "What food do you have?"
+    - "Can you show me the food options?"
+    - "I'd like to see the menu options."
+    - What items are on the menu?"
+    - "What's available to eat?"
+    - "Could I get the menu?"
+    - "Please show me the menu."
+    - "What are your menu choices?"
+    - "What meals do you serve?"
+
+- intent: cancel_order
+  examples: |
+    - I want to cancel my order
+    - Cancel my order
+    - I'd like to cancel my order
+    - Can I cancel the order?
+    - Please cancel the order
+
+- intent: order_food
+  examples: |
+    - I would like to order a [Margherita Pizza](item)
+    - Can you get me a [Margherita Pizza](item)?
+    - I'll order a [Margherita Pizza](item)
+    - Please add a [Margherita Pizza](item) to my order.
+    - How about a [Margherita Pizza](item)?
+    - I'd love to have a [Margherita Pizza](item).
+    - Can I get a [Pepperoni Pizza](item)?
+    - Can I order a [Pepperoni Pizza](item)?
+    - I'd like to order a [Pepperoni Pizza](item)
+    - I'll have a [Pepperoni Pizza](item)
+    - Give me one [Pepperoni Pizza](item)
+    - Add a [Pepperoni Pizza](item) to my order
+    - I'd like to have a [BBQ Chicken Pizza](item)
+    - Can you get me a [BBQ Chicken Pizza](item)?
+    - I'll order a [BBQ Chicken Pizza](item)
+    - Please add a [BBQ Chicken Pizza](item) to my order
+    - How about a [BBQ Chicken Pizza](item)?
+    - I'd love to have a [BBQ Chicken Pizza](item)
+    - I'll take a [Veggie Pizza](item)
+    - Can I order a [Veggie Pizza](item)?
+    - I'd like to order a [Veggie Pizza](item)
+    - I'll have a [Veggie Pizza](item)
+    - Give me one [Veggie Pizza](item)
+    - Add a [Veggie Pizza](item) to my order
+    - Give me a [Cheeseburger](item), please
+    - Can you get me a [Cheeseburger](item)?
+    - I'll order a [Cheeseburger](item)
+    - Please add a [Cheeseburger](item) to my order
+    - How about a [Cheeseburger](item)?
+    - I'd love to have a [Cheeseburger](item)
+    - I'd like a [Bacon Burger](item)
+    - Can I order a [Bacon Burger](item)?
+    - I'd like to order a [Bacon Burger](item)
+    - I'll have a [Bacon Burger](item)
+    - Give me one [Bacon Burger](item)
+    - Add a [Bacon Burger](item) to my order
+    - Can I have a [Veggie Burger](item)?
+    - Can you get me a [Veggie Burger](item)?
+    - I'll order a [Veggie Burger](item)
+    - Please add a [Veggie Burger](item) to my order
+    - How about a [Veggie Burger](item)?
+    - I'd love to have a [Veggie Burger](item)
+    - I'd like to order a [Caesar Salad](item)
+    - Can you get me a [Caesar Salad](item)?
+    - I'll order a [Caesar Salad](item)
+    - Please add a [Caesar Salad](item) to my order
+    - How about a [Caesar Salad](item)?
+    - I'd love to have a [Caesar Salad](item)
+    - Can I get a [Greek Salad](item)?
+    - Can you get me a [Greek Salad](item)?
+    - I'll order a [Greek Salad](item)
+    - Please add a [Greek Salad](item) to my order
+    - How about a [Greek Salad](item)?
+    - I'd love to have a [Greek Salad](item)
+    - I want a [Garden Salad](item)
+    - Can you get me a [Garden Salad](item)?
+    - I'll order a [Garden Salad](item)
+    - Please add a [Garden Salad](item) to my order
+    - How about a [Garden Salad](item)?
+    - I'd love to have a [Garden Salad](item)
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
