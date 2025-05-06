@@ -1,0 +1,60 @@
+version: "3.1"
+
+
+slots:
+  item: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: item
+  confirmation:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: confirmation
+
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - order_food
+  - ask_menu
+  - cancel_order  
+  - bot_challenge
+
+
+entities:
+  - item
+  - confirmation
+
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I help you today?"
+
+  utter_confirm_order:
+  - text: "You'd like to order {item}, right?"
+
+  utter_thank_you:
+  - text: "Thank you for your order! It will be ready shortly."
+
+  utter_goodbye:
+  - text: "Goodbye! Have a great day!"
+
+  utter_iamabot:
+  - text: "I am a bot, use me to order food."
+
+
+actions:
+  - action_place_order
+  - action_show_menu
+  - action_default_fallback
+  - action_cancel_order
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
